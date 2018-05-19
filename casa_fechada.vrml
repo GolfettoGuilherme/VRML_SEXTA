@@ -1,0 +1,288 @@
+#VRML V2.0 utf8
+#Casa
+Shape 
+{  
+	appearance Appearance   
+	{  
+		texture ImageTexture 
+		{
+			url "tijolo.jpg"
+		}
+	}
+	geometry IndexedFaceSet 
+	{  
+		coord Coordinate 
+		{  
+			point 
+			[ 
+				# parede frente
+				1.0  1.0  2.0,   # ponto 0
+				1.0 -1.0  2.0,   # ponto 1
+				-1.0 -1.0  2.0,  # ponto 2
+				-1.0  1.0  2.0,  # ponto 3
+
+				# parede tras
+				1.0  1.0  -2.0,   # ponto 4
+				1.0 -1.0  -2.0,   # ponto 5
+				-1.0 -1.0  -2.0,  # ponto 6
+				-1.0  1.0  -2.0,  # ponto 7
+
+				# parede direita
+				1.0   1.0   2.0  # ponto 8
+				1.0  -1.0  2.0   # ponto 9
+				1.0   1.0  -2.0  # ponto 10
+				1.0  -1.0 -2.0   # ponto 11
+
+				# parede esquerda
+				-1.0   1.0   2.0  # ponto 12
+				-1.0  -1.0  2.0   # ponto 13
+				-1.0   1.0  -2.0  # ponto 14
+				-1.0  -1.0 -2.0   # ponto 15
+
+
+			]
+		}
+		coordIndex
+		[
+			# Coordenadas dos pontos que formarao as paredes da casa
+			8 9 11 10 -1, #parede direita
+		]
+		color Color 
+		{  
+			color 
+			[
+				0.0 1.0 0.0, 0.0 0.0 1.0, 1.0 1.0 0.0  
+				# apenas 3 cores 0=Verde, 1=Azul e 2=Amarelo
+			]
+		}
+		colorPerVertex   FALSE
+		colorIndex 
+		[ 
+			1 1 0 0 2 2 2 2
+		]
+		solid FALSE
+		ccw TRUE
+		convex TRUE
+		creaseAngle 0
+	}
+}
+Shape 
+{  
+	appearance Appearance   
+	{  
+		texture ImageTexture 
+		{
+			url "telha.jpg"
+		}
+	}
+	geometry IndexedFaceSet 
+	{  
+		coord Coordinate 
+		{  
+			point 
+			[ 
+				# parede frente
+				1.0  1.0  2.0,   # ponto 0
+				1.0 -1.0  2.0,   # ponto 1
+				-1.0 -1.0  2.0,  # ponto 2
+				-1.0  1.0  2.0,  # ponto 3
+
+				# parede tras
+				1.0  1.0  -2.0,   # ponto 4
+				1.0 -1.0  -2.0,   # ponto 5
+				-1.0 -1.0  -2.0,  # ponto 6
+				-1.0  1.0  -2.0,  # ponto 7
+
+				# parede direita
+				1.0   1.0   2.0  # ponto 8
+				1.0  -1.0  2.0   # ponto 9
+				1.0   1.0  -2.0  # ponto 10
+				1.0  -1.0 -2.0   # ponto 11
+
+				# parede esquerda
+				-1.0   1.0   2.0  # ponto 12
+				-1.0  -1.0  2.0   # ponto 13
+				-1.0   1.0  -2.0  # ponto 14
+				-1.0  -1.0 -2.0   # ponto 15
+
+
+				# telhado frente
+				 1.0  1.0  2.0 # ponto 16
+				-1.0  1.0  2.0 # ponto 17
+				 0.0  2.0  2.0 # pont 18
+
+				# telhado tras
+				 1.0  1.0  -2.0 # ponto 19
+				-1.0  1.0  -2.0 # ponto 20
+				 0.0  2.0  -2.0 # pont 21
+
+			]
+		}
+		coordIndex
+		[
+			# Coordenadas dos pontos que formarao as paredes da casa
+			16 17 18 -1, #telhado frente
+			19 20 21 -1, #telhado tras
+			17 20 21 18 -1, #telhado direta
+
+			16 19 21 18 -1, #telhado esquerda
+		]
+		color Color 
+		{  
+			color 
+			[
+				0.0 1.0 0.0, 0.0 0.0 1.0, 1.0 1.0 0.0  
+				# apenas 3 cores 0=Verde, 1=Azul e 2=Amarelo
+			]
+		}
+		colorPerVertex   FALSE
+		colorIndex 
+		[ 
+			1 1 0 0 2 2 2 2
+		]
+		solid FALSE
+		ccw TRUE
+		convex TRUE
+		creaseAngle 0
+	}
+}
+Shape 
+{  
+	appearance Appearance   
+	{  
+
+	}
+	geometry IndexedFaceSet 
+	{  
+		coord Coordinate 
+		{  
+			point 
+			[ 
+				# parede frente
+				1.0  1.0  2.0,   # ponto 0
+				1.0 -1.0  2.0,   # ponto 1
+				-1.0 -1.0  2.0,  # ponto 2
+				-1.0  1.0  2.0,  # ponto 3
+
+				# parede tras
+				1.0  1.0  -2.0,   # ponto 4
+				1.0 -1.0  -2.0,   # ponto 5
+				-1.0 -1.0  -2.0,  # ponto 6
+				-1.0  1.0  -2.0,  # ponto 7
+
+				# parede direita
+				1.0   1.0   2.0  # ponto 8
+				1.0  -1.0  2.0   # ponto 9
+				1.0   1.0  -2.0  # ponto 10
+				1.0  -1.0 -2.0   # ponto 11
+
+				# parede esquerda
+				-1.0   1.0   2.0  # ponto 12
+				-1.0  -1.0  2.0   # ponto 13
+				-1.0   1.0  -2.0  # ponto 14
+				-1.0  -1.0 -2.0   # ponto 15
+
+
+				# telhado frente
+				 1.0  1.0  2.0 # ponto 16
+				-1.0  1.0  2.0 # ponto 17
+				 0.0  2.0  2.0 # pont 18
+
+				# telhado tras
+				 1.0  1.0  -2.0 # ponto 19
+				-1.0  1.0  -2.0 # ponto 20
+				 0.0  2.0  -2.0 # pont 21
+
+			]
+		}
+		coordIndex
+		[
+			# Coordenadas dos pontos que formarao as paredes da casa
+			0 1 2 3 -1, #parede frente
+			4 5 6 7 -1, #parede tras
+		]
+		color Color 
+		{  
+			color 
+			[
+				0.0 1.0 0.0, 0.0 0.0 1.0, 1.0 1.0 0.0  
+				# apenas 3 cores 0=Verde, 1=Azul e 2=Amarelo
+			]
+		}
+		colorPerVertex   FALSE
+		colorIndex 
+		[ 
+			1 1 0 0 2 2 2 2
+		]
+		solid FALSE
+		ccw TRUE
+		convex TRUE
+		creaseAngle 0
+	}
+}
+Shape 
+{  
+	appearance Appearance   
+	{  
+		texture ImageTexture 
+		{
+			url "tijolo.jpg"
+		}
+	}
+	geometry IndexedFaceSet 
+	{  
+		coord Coordinate 
+		{  
+			point 
+			[ 
+				# parede frente
+				1.0  1.0  2.0,   # ponto 0
+				1.0 -1.0  2.0,   # ponto 1
+				-1.0 -1.0  2.0,  # ponto 2
+				-1.0  1.0  2.0,  # ponto 3
+
+				# parede tras
+				1.0  1.0  -2.0,   # ponto 4
+				1.0 -1.0  -2.0,   # ponto 5
+				-1.0 -1.0  -2.0,  # ponto 6
+				-1.0  1.0  -2.0,  # ponto 7
+
+				# parede direita
+				1.0   1.0   2.0  # ponto 8
+				1.0  -1.0  2.0   # ponto 9
+				1.0   1.0  -2.0  # ponto 10
+				1.0  -1.0 -2.0   # ponto 11
+
+				# parede esquerda
+				-1.0   1.0   2.0  # ponto 12
+				-1.0  -1.0  2.0   # ponto 13
+				-1.0   1.0  -2.0  # ponto 14
+				-1.0  -1.0 -2.0   # ponto 15
+
+
+			]
+		}
+		coordIndex
+		[
+			# Coordenadas dos pontos que formarao as paredes da casa
+			12 13 15 14 -1, #parede esquerda
+		]
+		color Color 
+		{  
+			color 
+			[
+				0.0 1.0 0.0, 0.0 0.0 1.0, 1.0 1.0 0.0  
+				# apenas 3 cores 0=Verde, 1=Azul e 2=Amarelo
+			]
+		}
+		colorPerVertex   FALSE
+		colorIndex 
+		[ 
+			1 1 0 0 2 2 2 2
+		]
+		solid FALSE
+		ccw TRUE
+		convex TRUE
+		creaseAngle 0
+	}
+}
